@@ -5,6 +5,9 @@ const mongoose=require('mongoose');
 const cors=require('cors');
 
 const app=express();
+// new port
+const port = 'https://frontend-m6qx.onrender.com';
+
 app.use(express.json());
 app.use(cors());
 
@@ -101,7 +104,7 @@ app.put('/api/employess/:id',async(req,res)=>{
     }
 });
 
-app.listen(3001,(req,res)=>{
-    console.log("server is ready t http://localhost : 3001");
+app.listen(port,()=>{
+    console.log(`Server is runing on: ${port}`);
 
 });
