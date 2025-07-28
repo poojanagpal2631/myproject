@@ -1,0 +1,90 @@
+.casual {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto 0 auto;
+  border: 2px solid #575555;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+h1 {
+  text-align: center;
+  background: linear-gradient(to right, #ee581c, #d16ba6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 4%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ✅ Responsive design for mobile */
+@media (max-width: 480px) {
+  .casual {
+    padding: 15px;
+    margin-top: 60px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

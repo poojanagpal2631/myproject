@@ -1,0 +1,86 @@
+body{
+
+  background:linear-gradient(to right, #d4d1e7, #b1d3d8, #ffffff);
+  background-image: url('/public/emp2.webp');
+  background-repeat:no-repeat;
+  height:100vh;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+h2{
+    text-align:center;
+    margin-top:3%;
+     font-size:40px;
+    background: linear-gradient(to right,  #f82056, #4609ee); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  
+  font-weight: bold;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in-text {
+  display: center;
+  animation: zoomIn 2s infinite ease-out forwards;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(238, 233, 233, 0.1);
+  background-attachment:fixed; /* white overlay, 0.5 = 50% fade */
+  z-index: -1;
+}
+   
+/* Centered Heading */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #2c3e50;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+/* Button Enhancements */
+nav .btn {
+  min-width: 120px;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+nav .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+
+  
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(220, 221, 220);
+  }
+}

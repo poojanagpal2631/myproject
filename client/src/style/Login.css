@@ -1,0 +1,123 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-form {
+  background-color: white;
+  padding: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  width: 450px;
+  text-align: center;
+  height: 550px;
+  margin-left: 33%;
+  background: linear-gradient(to right, #fff7f0, #e6f7ff);
+  box-sizing: border-box;
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-container {
+  animation: fadeInUp 0.8s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form h1 {
+  margin-bottom: .3rem;
+  background: linear-gradient(to left, #6997ec, #ad5581);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p, input {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Button */
+.login-button {
+  width: 80%;
+  padding: 15px 15px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-left: 9%;
+  margin-top: 25px;
+}
+
+.login-button:hover {
+  background-color: #1a5ed9;
+}
+
+/* ✅ Media query to preserve styling on small screens */
+@media (max-width: 600px) {
+  .login-form {
+    width: 100%;
+    margin-left: 0;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .login-form h1 {
+    font-size: 1.6rem;
+  }
+
+  p, input {
+    font-size: 14px;
+  }
+
+  .login-button {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+}
