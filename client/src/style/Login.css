@@ -102,7 +102,7 @@ p, input {
 @media (max-width: 600px) {
   .login-form {
     width: 100%;
-    margin-left: 0;
+    margin-left: 5px;
     padding: 2rem;
     height: auto;
   }
