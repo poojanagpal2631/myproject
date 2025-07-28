@@ -111,21 +111,3 @@ p, input {
   }
 }
 
-@media (max-width: 480px) {
-  .form-table-wrapper {
-    padding: 15px;
-  }
-
-  .find-form {
-    font-size: 18px;
-  }
-
-  .table {
-    font-size: 12px;
-    top: -20px;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-  }
-}
