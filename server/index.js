@@ -14,7 +14,7 @@ app.use(cors());
 async function connectDB(){
     try{
        // await mongoose.connect('mongodb://localhost:27017/company');
-         await mongoose.connect('mongodb+srv://radheyshree098:fczSSFpjlkrrrHLD@cluster0.3e7v2vg.mongodb.net/company?retryWrites=true&w=majority&appName=Cluster0');
+         await mongoose.connect(process.env.MONGO_URI);
         console.log('mongoDB database connected');
     }
     catch(error)
