@@ -10,7 +10,7 @@ function FindId(){
                 e.preventDefault();
                 try
                 {
-                    const response= await axios.get(`http://localhost:3001/api/employess/${id}`);
+                    const response= await axios.get(`https://myproject-6hir.onrender.com/api/employess/${id}`);
                     setEmployee(response.data);
              }
                 catch(err){
