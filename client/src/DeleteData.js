@@ -7,7 +7,7 @@ const [id,setID]=useState('');
     async function Delete(e){
         e.preventDefault();
         try{
-            const response= await axios.delete(`http://localhost:3001/api/employess/${id}`);
+            const response= await axios.delete(`https://myproject-6hir.onrender.com/api/employess/${id}`);
             alert("data delete successfully");
         }
         catch(err){
