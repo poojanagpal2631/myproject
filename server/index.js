@@ -104,7 +104,7 @@ app.put('/api/employess/:id',async(req,res)=>{
     }
 });
 
-app.listen(port,()=>{
+app.listen({port},()=>{
     console.log(`Server is runing on: http://localhost:3001`);
 
 });
