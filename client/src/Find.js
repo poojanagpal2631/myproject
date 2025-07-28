@@ -8,7 +8,7 @@ function Find() {
   async function findHandler(e) {
     e.preventDefault();
     try {
-      const response = await axios.get('http://localhost:3001/api/employess');
+      const response = await axios.get('https://myproject-6hir.onrender.com/api/employess');
       setEmployees(response.data);
     } catch (err) {
       alert(err);
