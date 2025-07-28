@@ -85,7 +85,7 @@ p, input {
 @media (max-width: 480px) {
   .form {
     padding: 2rem;
-    margin-top:5%;
+    
   }
 
   .form h1 {
