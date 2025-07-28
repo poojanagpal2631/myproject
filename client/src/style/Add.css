@@ -110,4 +110,24 @@ p, input {
     font-size: 1.6rem;
   }
 }
+@media (max-width: 480px) {
+  .form {
+    padding: 2rem;
+    margin-top:5%;
+  }
+
+  .form h1 {
+    font-size: 1.6rem;
+  }
+
+  .input,
+  p {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 0.95rem;
+  }
+}
+
 
