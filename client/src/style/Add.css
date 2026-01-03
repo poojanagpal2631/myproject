@@ -4,9 +4,11 @@
   align-items: center;
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
-  margin-top: 5%;
+  
   padding: 20px;
   box-sizing: border-box;
+  
+  
 }
 
 .bounce {
@@ -41,7 +43,7 @@
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 3px;
+  
 }
 
 p, input {
@@ -80,11 +82,11 @@ p, input {
 .button:hover {
   background-color: #1a5ed9;
 }
-
-/* ✅ Responsive for small screens */
 @media (max-width: 480px) {
   .form {
     padding: 2rem;
+    
+    
   }
 
   .form h1 {
@@ -100,3 +102,5 @@ p, input {
     font-size: 0.95rem;
   }
 }
+
+
